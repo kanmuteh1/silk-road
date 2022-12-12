@@ -56,10 +56,10 @@
 </template>
 
 <style>
-    #body{
+    .body{
         font-family: Helvetica, Arial, sans-serif !important;
         margin: 0%;
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=5");
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../../images/living-room.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -156,5 +156,10 @@
 </style>
 
 <script>
-
+    export default {
+        beforeCreate(){
+            document.body.className = "body"
+        }
+    
+    };
 </script>

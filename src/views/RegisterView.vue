@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="login-your-account">
-            <h2>Don't have an account?</h2>
+            <h2>Already have an account?</h2>
             <p class="login-account-txt">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Facere placeat rerum tempore a voluptas optio voluptatem
@@ -70,6 +70,16 @@
 </template>
 
 <style>
+    .body{
+        font-family: Helvetica, Arial, sans-serif !important;
+        margin: 0%;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=5");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
     .register-container{
         margin-top: 5%;
         margin-left: 15%;
@@ -230,7 +240,7 @@
     }
 
     .login-your-account{
-        margin-top: 7%;
+        margin-top: 6.5%;
         padding: 5% 0% 5% 90%;
         border: .5px solid lightgray;
         height: 38vh;
@@ -262,5 +272,10 @@
 </style>
 
 <script>
-
+    export default {
+        beforeCreate(){
+            document.body.className = "body"
+        }
+    
+    };
 </script>

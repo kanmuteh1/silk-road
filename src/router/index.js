@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import VueBodyClass from 'vue-body-class';
 
 const routes = [
   {
@@ -24,6 +25,18 @@ const routes = [
     name: "register",
     component: () =>
       import(/* webpackChunkName: "register" */ "../views/RegisterView.vue"),
+  },
+  {
+    path: "/properties",
+    name: "properties",
+    component: () =>
+      import(/* webpackChunkName: "properties" */ "../views/OurPropertiesView.vue"),
+  },
+  {
+    path: "/property",
+    name: "property",
+    component: () =>
+      import(/* webpackChunkName: "property" */ "../views/PropeertyView.vue"),
   },
 ];
 

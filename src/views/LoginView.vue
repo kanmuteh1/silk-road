@@ -62,6 +62,16 @@
 </template>
 
 <style>
+    .body{
+        font-family: Helvetica, Arial, sans-serif !important;
+        margin: 0%;
+        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../../images/living-room.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
     .login-container {
         margin-top: 5%;
         margin-left: 15%;
@@ -222,7 +232,12 @@
         margin-right: 2%;
     }
 </style>
-
+    
 <script>
-
+    export default {
+        beforeCreate(){
+            document.body.className = "body"
+        }
+    
+    };
 </script>

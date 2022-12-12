@@ -2,7 +2,7 @@
   <div class="big-head">
     <div class="left">
       <div id="logo">
-        <router-link to="/">Houses</router-link>
+        <router-link to="/"><b>SILKROAD</b></router-link>
       </div>
     </div>
     <div class="right">
@@ -10,7 +10,7 @@
         <div class="up-left">
           <div class="links">
             <router-link to="/">Home</router-link>
-            <router-link to="/grid">Our Properties</router-link>
+            <router-link to="/properties">Our Properties</router-link>
           </div>
         </div>
         <div class="up-right">
@@ -44,152 +44,154 @@
 </template>
 
 <style>
-.big-head{
-    height: 108px;
+  .big-head{
+    height: 17vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     display: grid;
     grid-template-columns: .3fr 1fr;
-    gap: .08%;
-}
+    gap: .06%;
+  }
 
-.left{
+  .left{
     padding-top: 7%;
-}
+  }
 
-#logo{
-    margin-left: auto;
+  #logo{
+    margin-left: 22%;
     margin-right: auto;
     padding: 5%;
     text-align: center;
     background-color: black;
     text-transform: uppercase;
     color: white;
-    width: 50%;
-    height: 25px;
-}
+    width: 52%;
+    height: 5.8vh;
+  }
 
-#logo a{
+  #logo a{
     text-decoration: none;
+    font-size: 1.8em;
     color: white;
-}
+  }
 
-.right{
+  .right{
+    margin-top: .5%;
     width: 94%;
-}
+  }
 
-.right hr{
+  .right hr{
     margin-top: 1.5%;
-}
+  }
 
-.up, .down{
+  .up, .down{
 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10%;
-}
+  }
 
-.up-left, .down-left{
+  .up-left, .down-left{
     height: 34px;
     width: 100%;
-}
+  }
 
-.down-left{
+  .down-left{
     padding-top: 1.5%;
-}
+  }
 
-.up-right, .down-right{
+  .up-right, .down-right{
     height: 1px;
     width: 100%;
     text-align: right;
-}
+  }
 
-.down-left,.down-right{
+  .down-left, .down-right{
     margin-top: -2.5%;
-}
+  }
 
-.links{
+  .links{
     margin-top: 16px;
     padding-bottom: 4%;
-}
+  }
 
-.up-left .links a, .down-left a,.up-right a,.down-right a{
+  .up-left .links a, .down-left a,.up-right a,.down-right a{
     text-decoration: none;
     color: white;
     font-size: 18px;
     margin: 5px;
-}
+  }
 
-span{
+  span{
     color: white;
     font-size: 18px;
-}
+  }
 
-.post-property{
-  width: 36%;
-  background-color: blue;
-  color: white;
-  padding: 1%;
-  border: 2px solid blue;
-  border-radius: 5px 5px 5px 5px;
-  cursor: pointer;
-}
+  .post-property{
+    width: 36%;
+    background-color: blue;
+    color: white;
+    padding: 1%;
+    border: 2px solid blue;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+  }
 
-.hambugger{
+  .hambugger{
     display: none;
-}
+  }
 
-/* responsiveness */
+  /* responsiveness */
 
-@media (max-width: 720px){
+  @media (max-width: 720px){
     .big-head{
-        height: 108px;
-        padding-top: 4%;
-        background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-        display: grid;
-        grid-template-columns: 1fr .5fr;
-        gap: 20px;
+      height: 108px;
+      padding-top: 4%;
+      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+      display: grid;
+      grid-template-columns: 1fr .5fr;
+      gap: 20px;
     }
 
     .left{
-        height: 100%;
-        padding-top: 3%;
+      height: 100%;
+      padding-top: 3%;
     }
 
     #logo{
-        margin-left: 13%;
-        margin-right: auto;
-        padding: 5%;
-        text-align: center;
-        background-color: black;
-        text-transform: uppercase;
-        color: white;
-        width: 50%;
-        height: 30px;
+      margin-left: 13%;
+      margin-right: auto;
+      padding: 5%;
+      text-align: center;
+      background-color: black;
+      text-transform: uppercase;
+      color: white;
+      width: 50%;
+      height: 30px;
     }
 
     .hambugger{
-        display: grid;
-        margin-left: 20%;
-        height: 100%;
+      display: grid;
+      margin-left: 20%;
+      height: 100%;
     }
 
     #menu{
-        padding: 8%;
-        margin-top: 8%;
-        text-align: center;
-        font-size: 40px;
-        background-color: black;
-        text-transform: uppercase;
-        cursor: pointer;
-        color: white;
-        width: 50%;
-        height: 40px;
+      padding: 8%;
+      margin-top: 8%;
+      text-align: center;
+      font-size: 40px;
+      background-color: black;
+      text-transform: uppercase;
+      cursor: pointer;
+      color: white;
+      width: 50%;
+      height: 40px;
     }    
 
     .right{
-        display: none;
+      display: none;
     }
-}
+  }
 </style>
 
 <script>
