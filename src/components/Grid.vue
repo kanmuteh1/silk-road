@@ -71,7 +71,6 @@
     .img-house{
         width: 100%;
         height: inherit;
-        background-color: yellow;
         position: relative;
         z-index: 1;
     }
@@ -81,7 +80,9 @@
     }
 
     .house-price{
-        background-color: orange;
+        background-color: #025942;
+        opacity: 70%;
+        color: white;
         width: 50%;
         height: 3vh;
         padding: 2%;
@@ -141,13 +142,12 @@
     }
 
     .house-rating span{
-        color: rgb(157, 238, 157);
+        color: rgb(129, 200, 129)
     }
 
     .house-reaction-buttons{
         display:flex;
         width: 100%;
-        background-color: red;
     }
 
     .reaction-buttons{
@@ -155,7 +155,10 @@
         display: flex;
         text-align: right;
         padding: .5%;
-        border: .5px solid lightgrey;
+        background-color: white;
+        border-right: .5px solid lightgray;
+        border-left: .5px solid lightgray;
+        border-bottom: 1px solid lightgray;
     }
 
     .icon{
@@ -163,11 +166,19 @@
         margin-top: 5%;
     }
 
+    .icon span{
+        color: rgb(184, 209, 184);
+    }
+
     .count{
         width: 40%;
         text-align: left;
         margin-left: 4%;
         margin-top: 10%;
+    }
+
+    .count span{
+        color: gray;
     }
 
     #book{
