@@ -102,8 +102,8 @@
                 </div>
                 <div class="views">
                     <div class="view-txt"><span>View</span></div>
-                    <div class="view-list"><span id="list"><i class="fa fa-list" aria-hidden="true"></i></span></div>
-                    <div class="view-grid"><span id="grid"><i class="fa fa-grip" aria-hidden="true"></i></span></div>
+                    <div @click="toList" class="view-list"><span id="list"><i class="fa fa-list" aria-hidden="true"></i></span></div>
+                    <div @click="toGrid" class="view-grid"><span id="grid"><i class="fa fa-grip" aria-hidden="true"></i></span></div>
                 </div>
                 <div class="sort">
                     <div class="sort-txt"><span>Sort by</span></div>
@@ -123,10 +123,10 @@
                 </div>
             </div>
         </div>
-        <div class="grid-houses-wrapper"> 
-            <Grid />
-            <Grid />
-            <Grid />
+        <div class="houses-wrapper"> 
+            <Grid v-if="isGrid" />
+
+            <List v-if="isList" />
         </div>
         <div class="grid-adv">
             <h3>Advertisements</h3>
@@ -135,6 +135,12 @@
 </template>
 
 <style>
+    .houses-wrapper{
+        width: 100%;
+        height: 14vh;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
 
     .properties-body{
         background-color: rgb(241, 237, 237);
@@ -402,16 +408,6 @@
         color: white;
     }
 
-    .grid-houses-wrapper{
-        width: 100%;
-        height: 14vh;
-        grid-column-start: 2;
-        grid-column-end: 4;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 2%;
-    }
-
     .grid-adv{
         width: 100%;
         height: 80vh;
@@ -428,6 +424,9 @@
 
 <script>
     import Grid from "../components/Grid.vue";
+    import  List from "../components/List.vue";
+    // import  Footer from "../components/Footer.vue";
+
 
     export default {
         name: "App",
@@ -436,6 +435,24 @@
         },
         components: {
             Grid,
+            List,
+            // Footer,
+        },
+        data:function (){
+            return{
+                isGrid: true,
+                isList: false,
+            }
+        },
+        methods:{
+            toGrid(){
+                this.isGrid = true
+                this.isList = false
+            },
+            toList(){
+                this.isList = true
+                this.isGrid = false
+            }
         },
     };
 </script>

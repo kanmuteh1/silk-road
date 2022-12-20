@@ -1,67 +1,200 @@
 <template>
-    <div class="house">
-        <div class="house-img">
-            <div class="img-house">
-                <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
+    <div class="grid-wrapper">
+        <div class="house">
+            <div class="house-img">
+                <div class="img-house">
+                    <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
+                </div>
+                <div class="house-price">
+                    <p><sup>$</sup><b>500/</b>month</p>
+                </div>
             </div>
-            <div class="house-price">
-                <p><sup>$</sup><b>500/</b>month</p>
+            <div class="house-detials">
+                <div class="house-info">
+                    <div class="house-size">
+                        <span>3 Bedroom house</span>
+                    </div>
+                    <div class="house-location">
+                        <span><i class="fa-solid fa-location-dot"></i> 45 Circle Dr, Monrovia, Liberia</span>
+                    </div>
+                    <div class="owner">
+                        <span>Peter Wayne</span>
+                    </div>
+                </div>
+                <div class="house-rating">
+                    <span class="material-symbols-outlined">star</span>
+                </div>
+            </div>
+            <div class="house-reaction-buttons">
+                <div id="triangle" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">change_history</span>
+                    </div>
+                    <div class="count">
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="reaction-buttons">
+                    <div class="icon" id="book">
+                        <span><i class="fa-solid fa-book"></i></span>
+                    </div>
+                    <div class="count">
+                        <span>3</span>
+                    </div>
+                </div>
+                <div id="memory" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">memory</span>
+                    </div>
+                    <div class="count">
+                        <span>4</span>
+                    </div>
+                </div>
+                <div id="views" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">desktop_windows</span>
+                    </div>
+                    <div class="count">
+                        <span>4</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="house-detials">
-            <div class="house-info">
-                <div class="house-size">
-                    <span>3 Bedroom house</span>
+
+        <div class="house">
+            <div class="house-img">
+                <div class="img-house">
+                    <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
                 </div>
-                <div class="house-location">
-                    <span><i class="fa-solid fa-location-dot"></i> 45 Circle Dr, Monrovia, Liberia</span>
-                </div>
-                <div class="owner">
-                    <span>Peter Wayne</span>
+                <div class="house-price">
+                    <p><sup>$</sup><b>500/</b>month</p>
                 </div>
             </div>
-            <div class="house-rating">
-                <span class="material-symbols-outlined">star</span>
+            <div class="house-detials">
+                <div class="house-info">
+                    <div class="house-size">
+                        <span>3 Bedroom house</span>
+                    </div>
+                    <div class="house-location">
+                        <span><i class="fa-solid fa-location-dot"></i> 45 Circle Dr, Monrovia, Liberia</span>
+                    </div>
+                    <div class="owner">
+                        <span>Peter Wayne</span>
+                    </div>
+                </div>
+                <div class="house-rating">
+                    <span class="material-symbols-outlined">star</span>
+                </div>
+            </div>
+            <div class="house-reaction-buttons">
+                <div id="triangle" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">change_history</span>
+                    </div>
+                    <div class="count">
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="reaction-buttons">
+                    <div class="icon" id="book">
+                        <span><i class="fa-solid fa-book"></i></span>
+                    </div>
+                    <div class="count">
+                        <span>3</span>
+                    </div>
+                </div>
+                <div id="memory" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">memory</span>
+                    </div>
+                    <div class="count">
+                        <span>4</span>
+                    </div>
+                </div>
+                <div id="views" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">desktop_windows</span>
+                    </div>
+                    <div class="count">
+                        <span>4</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="house-reaction-buttons">
-            <div id="triangle" class="reaction-buttons">
-                <div class="icon">
-                    <span class="material-symbols-outlined">change_history</span>
+
+        <div class="house">
+            <div class="house-img">
+                <div class="img-house">
+                    <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
                 </div>
-                <div class="count">
-                    <span>2</span>
-                </div>
-            </div>
-            <div class="reaction-buttons">
-                <div class="icon" id="book">
-                    <span><i class="fa-solid fa-book"></i></span>
-                </div>
-                <div class="count">
-                    <span>3</span>
+                <div class="house-price">
+                    <p><sup>$</sup><b>500/</b>month</p>
                 </div>
             </div>
-            <div id="memory" class="reaction-buttons">
-                <div class="icon">
-                    <span class="material-symbols-outlined">memory</span>
+            <div class="house-detials">
+                <div class="house-info">
+                    <div class="house-size">
+                        <span>3 Bedroom house</span>
+                    </div>
+                    <div class="house-location">
+                        <span><i class="fa-solid fa-location-dot"></i> 45 Circle Dr, Monrovia, Liberia</span>
+                    </div>
+                    <div class="owner">
+                        <span>Peter Wayne</span>
+                    </div>
                 </div>
-                <div class="count">
-                    <span>4</span>
+                <div class="house-rating">
+                    <span class="material-symbols-outlined">star</span>
                 </div>
             </div>
-            <div id="views" class="reaction-buttons">
-                <div class="icon">
-                    <span class="material-symbols-outlined">desktop_windows</span>
+            <div class="house-reaction-buttons">
+                <div id="triangle" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">change_history</span>
+                    </div>
+                    <div class="count">
+                        <span>2</span>
+                    </div>
                 </div>
-                <div class="count">
-                    <span>4</span>
+                <div class="reaction-buttons">
+                    <div class="icon" id="book">
+                        <span><i class="fa-solid fa-book"></i></span>
+                    </div>
+                    <div class="count">
+                        <span>3</span>
+                    </div>
+                </div>
+                <div id="memory" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">memory</span>
+                    </div>
+                    <div class="count">
+                        <span>4</span>
+                    </div>
+                </div>
+                <div id="views" class="reaction-buttons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">desktop_windows</span>
+                    </div>
+                    <div class="count">
+                        <span>4</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!--  -->
 </template>
 
 <style>
+    .grid-wrapper{
+        width: 100%;
+        height: inherit;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 2%;
+    }
+
     .house-img{
         width: 100%;
         height: 23vh;
@@ -154,7 +287,6 @@
         width: 25%;
         display: flex;
         text-align: right;
-        padding: .5%;
         background-color: white;
         border-right: .5px solid lightgray;
         border-left: .5px solid lightgray;
