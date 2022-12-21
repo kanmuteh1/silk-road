@@ -53,8 +53,8 @@
             <div class="social-media-login-icon">
                 <p>
                     Login With
-                    <i class="fab fa-facebook-square" id="facebook-icon"></i>  
-                    <i class="fab fa-twitter-square" id="twitter-icon"></i>
+                    <i class="fa fa-facebook" id="facebook-icon"></i>  
+                    <i class="fa fa-twitter" id="twitter-icon"></i>
                 </p>
             </div>
         </div>

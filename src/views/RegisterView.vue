@@ -48,8 +48,8 @@
             <div class="social-media-register-icon">
                 <p>
                     Register With
-                    <i class="fab fa-facebook-square" id="facebook-icon-register"></i>  
-                    <i class="fab fa-twitter-square" id="twitter-icon-register"></i>
+                    <i class="fa fa-facebook" id="facebook-icon-register"></i>  
+                    <i class="fa fa-twitter" id="twitter-icon-register"></i>
                 </p>
             </div>
         </div>

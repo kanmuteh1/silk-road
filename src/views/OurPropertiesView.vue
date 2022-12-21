@@ -132,16 +132,14 @@
             <h3>Advertisements</h3>
         </div>
     </div>
+    <div class="load-more">
+        <button class="load-more-btn" ><b>Load more</b></button>
+    </div>
+
+    <Footer />
 </template>
 
 <style>
-    .houses-wrapper{
-        width: 100%;
-        height: 14vh;
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
-
     .properties-body{
         background-color: rgb(241, 237, 237);
     }
@@ -298,6 +296,12 @@
         background-color: lightgray;
     }
 
+    .houses-wrapper{
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
     .grid-head-nav{
         width: 92%;
         height: 5vh;
@@ -420,12 +424,28 @@
         color: gray;
         font-size: 1.5em;
     }
+
+    .load-more{
+        width: 100%;
+        text-align: center;
+    }
+
+    .load-more-btn{
+        padding: .5% 4% .5% 4%;
+        margin-top: 3.2%;
+        margin-bottom: 1.8%;
+        color: white;
+        background-color: gray;
+        border: 1px solid gray;
+        border-radius: 5px 5px 5px 5px;
+    }
+
 </style>
 
 <script>
     import Grid from "../components/Grid.vue";
     import  List from "../components/List.vue";
-    // import  Footer from "../components/Footer.vue";
+    import  Footer from "../components/Footer.vue";
 
 
     export default {
@@ -436,7 +456,7 @@
         components: {
             Grid,
             List,
-            // Footer,
+            Footer,
         },
         data:function (){
             return{
