@@ -121,6 +121,10 @@
         margin-bottom: 10%;
     }
 
+    .post p b{
+        font-size: .9em;
+    }
+
     .post p span{
         font-size: small;
     }

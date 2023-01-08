@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import VueBodyClass from 'vue-body-class';
 
 const routes = [
   {
@@ -36,7 +35,13 @@ const routes = [
     path: "/property",
     name: "property",
     component: () =>
-      import(/* webpackChunkName: "property" */ "../views/PropeertyView.vue"),
+      import(/* webpackChunkName: "property" */ "../views/PropertyView.vue"),
+  },
+  {
+    path: "/post-property",
+    name: "post-property",
+    component: () =>
+      import(/* webpackChunkName: "post-property" */ "../views/PostPropertyView.vue"),
   },
 ];
 

@@ -1,50 +1,61 @@
 <template>
-  <div class="big-head">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="top-nav">
     <div class="left">
       <div id="logo">
         <router-link to="/"><b>SILKROAD</b></router-link>
       </div>
     </div>
-    <div class="right">
-      <div class="up">
-        <div class="up-left">
-          <div class="links">
-            <router-link to="/">Home</router-link>
-            <router-link to="/properties">Our Properties</router-link>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <div class="menu">
+      <li>
+        <div class="right">
+          <div class="up">
+            <div class="up-left">
+              <div class="links">
+                <router-link to="/">Home</router-link>
+                <router-link to="/properties">Our Properties</router-link>
+              </div>
+            </div>
+            <div class="up-right">
+              <div class="links">
+                <div class="logout" v-if="isLogout">
+                  <router-link to="/login">Login</router-link>
+                  <span>|</span>
+                  <router-link to="/register">Register</router-link>
+                </div>
+                <div class="logout" v-if="isLogin">
+                  <router-link to="/login">John Wayne</router-link>
+                  <span>|</span>
+                  <router-link to="/login">Logout</router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr/>
+          <div class="down">
+            <div class="down-left">
+              <div class="links"></div>
+            </div>
+            <div class="down-right">
+              <div class="links">
+                <router-link to="/post-property">
+                  <button class="post-property"><b>Post a Property</b></button>
+                </router-link>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="up-right">
-          <div class="links">
-            <router-link to="/login">Login</router-link>
-            <span>|</span>
-            <router-link to="/register">Register</router-link>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="down">
-        <div class="down-left">
-          <div class="links"></div>
-        </div>
-        <div class="down-right">
-          <div class="links">
-            <a href="#">
-              <button class="post-property"><b>Post a Property</b></button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hambugger">
-      <div id="menu">
-        <i class="fas fa-bars"></i>
-      </div>
+      </li>
     </div>
   </div>
 </template>
 
 <style>
-  .big-head{
+  .top-nav {
     height: 17vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
     display: grid;
@@ -72,6 +83,12 @@
     text-decoration: none;
     font-size: 1.8em;
     color: white;
+  }
+
+  .menu > li {
+    margin-top: -1.9%;
+    height: 18vh;
+    overflow: hidden;
   }
 
   .right{
@@ -136,25 +153,91 @@
     cursor: pointer;
   }
 
-  .hambugger{
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #menu-toggle {
     display: none;
   }
 
-  /* responsiveness */
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
 
-  @media (max-width: 720px){
-    .big-head{
-      height: 108px;
-      padding-top: 4%;
-      background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
+  @media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+    }
+    .menu {
+      position: relative;
+      top: 50%;
+      width: 135%;
+      justify-content: center;
+      align-items: center;
+    }
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height: 5.5em;
+      padding: 0.5em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .menu > li {
       display: grid;
-      grid-template-columns: 1fr .5fr;
-      gap: 20px;
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+      color: white;
+      background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     }
 
-    .left{
-      height: 100%;
-      padding-top: 3%;
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
     }
 
     #logo{
@@ -165,31 +248,8 @@
       background-color: black;
       text-transform: uppercase;
       color: white;
-      width: 50%;
+      width: 70%;
       height: 30px;
-    }
-
-    .hambugger{
-      display: grid;
-      margin-left: 20%;
-      height: 100%;
-    }
-
-    #menu{
-      padding: 8%;
-      margin-top: 8%;
-      text-align: center;
-      font-size: 40px;
-      background-color: black;
-      text-transform: uppercase;
-      cursor: pointer;
-      color: white;
-      width: 50%;
-      height: 40px;
-    }    
-
-    .right{
-      display: none;
     }
   }
 </style>
@@ -197,5 +257,21 @@
 <script>
   export default {
     name: "Header_component",
+    data:function (){
+      return{
+        isLogout: true,
+        isLogin: false, 
+      }
+    },
+    methods:{
+      toLogin(){
+        this.isLogin = true
+        this.isLogout = false
+      },
+      toLogout(){
+        this.isLogout = true
+        this.isLogin = false   
+      },
+    },
   };
 </script>

@@ -146,7 +146,7 @@
 
     .properties-container{
         width: 92%;
-        margin: 2% auto 0% auto;
+        margin: 1% auto 0% auto;
         display: grid;
         row-gap: 4%;
         column-gap: 2%;
@@ -297,6 +297,7 @@
     }
 
     .houses-wrapper{
+        margin-top: -3%;
         width: 100%;
         grid-column-start: 2;
         grid-column-end: 4;
@@ -413,6 +414,7 @@
     }
 
     .grid-adv{
+        margin-top: -9.5%;
         width: 100%;
         height: 80vh;
         background-color: white;

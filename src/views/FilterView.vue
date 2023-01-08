@@ -2,7 +2,7 @@
     <section class="filter">
         <div class="filter-nav">
             <div class="filter-nav-icon">
-                <i class="fas fa-filter" id="filter"> Filter</i>
+                <i class="fas fa-filter" id="filter"></i> Filter
             </div>
             <div class="filter-nav-links">
                 <a href="#">All</a>
@@ -160,6 +160,5 @@
         beforeCreate(){
             document.body.className = "body"
         }
-    
     };
 </script>

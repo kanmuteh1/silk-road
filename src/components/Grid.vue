@@ -2,9 +2,9 @@
     <div class="grid-wrapper">
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -63,9 +63,9 @@
 
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -124,9 +124,9 @@
 
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -185,9 +185,9 @@
 
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -246,9 +246,9 @@
 
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -307,9 +307,9 @@
 
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -368,9 +368,9 @@
 
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -429,9 +429,9 @@
 
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -490,9 +490,9 @@
 
         <div class="house">
             <div class="house-img">
-                <div class="img-house">
+                <router-link class="img-house" to="/property">
                     <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-                </div>
+                </router-link>
                 <div class="house-price">
                     <p><sup>$</sup><b>500/</b>month</p>
                 </div>
@@ -560,7 +560,7 @@
     }
 
     .house{
-        margin-bottom: 8%;
+        margin-bottom: 6%;
     }
 
     .house-img{
@@ -588,7 +588,7 @@
         height: 3vh;
         padding: 2%;
         margin-left: 46%;
-        margin-top: -9%;
+        margin-top: -14%;
         text-align: center;
         position: absolute;
         z-index: 3;
@@ -604,7 +604,7 @@
         border: 1px solid lightgray;
         display: flex;
         justify-content: space-between;
-        width: 99.5%;
+        width: 99.3%;
     }
 
     .house-size{

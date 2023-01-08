@@ -30,7 +30,7 @@
                     </select>
                 </div>
                 <div class="phone-icon">
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
                 <div class="login-contact">
                     <input type="text" name="num" placeholder="Phone number" class="Phone-number-login">
@@ -108,7 +108,6 @@
         color: white;
         border-radius: 5px 5px 5px 5px;
         background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
-
     }
 
     .login {
@@ -145,7 +144,7 @@
         background-color: gray;
         color: white;
         outline: none;
-        padding: 10%;
+        padding: 10.5%;
     }
     
     .phone-icon{

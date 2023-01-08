@@ -25,7 +25,7 @@
                     </select>
                 </div>
                 <div class="phone-icon-register">
-                    <i class="fas fa-phone-alt"></i>
+                    <i class="fa fa-phone" aria-hidden="true"></i>
                 </div>
                 <div class="register-contact">
                     <input type="text" name="num" placeholder="Phone number" class="Phone-number-register-input">

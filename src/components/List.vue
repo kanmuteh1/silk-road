@@ -1,9 +1,9 @@
 <template>
     <div class="list-wrapper">
         <div class="list-house">
-            <div class="list-house-img">
+            <router-link class="list-house-img" to="/property">
                 <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?b=1&s=170667a&w=0&k=20&c=_hhCabirIxpIFGm5i11Oxe_qVxpoq2Nbj8DXtCp_Zd8=" alt="">
-            </div>
+            </router-link>           
             <div class="list-house-details">
                 <div class="details">
                     <div class="house-info-main">
