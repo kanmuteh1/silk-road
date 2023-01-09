@@ -238,11 +238,9 @@
                 <i class="fa fa-twitter" id="twitter-icon"></i>
                 <p><b>Share Property</b></p>
             </div>
-            <div class="singlehouse-map">
-                <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br>
-                        <a href="https://www.embedgooglemap.net">responsive google map embed</a>
-                    </div>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br>
+                    <a href="https://www.embedgooglemap.net">responsive google map embed</a>
                 </div>
             </div>
         </div>
@@ -645,11 +643,19 @@
     }
 
     /* google mmap */
+    /* .singlehouse-map{
+        width: 100%;
+        margin-bottom: 10%;
+        background-color: red;
+        margin-left: 0px;
+    } */
+
     .mapouter{
         position:relative;
         text-align:right;
         height:500px;
         width:600px;
+        margin-bottom: 10%;
     }
 
     .gmap_canvas {
